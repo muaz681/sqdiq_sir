@@ -81,7 +81,7 @@ export default function PhotosVideos({ allData }) {
         {btn === "photos" ? (
           <div className="photo_grid">
             {/* **** PHOTO GALLERY **** */}
-            {allImages?.slice(0, 12).map((image, index, array) => (
+            {allImages?.slice(0, 9).map((image, index, array) => (
               <img
                 key={index}
                 src={image}

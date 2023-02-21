@@ -72,7 +72,6 @@ export default function PhotosVideos({ allData }) {
                 // loading="lazy"
                 className={`photo${index} `}
                 // onClick={() => viewImg(serverURL + item.photo, index, array)}
-                data-aos={window.screen.width < 800 ? "fade-up" : "flip-left"}
               />
 
               <div class="overlay mask text-light d-flex flex-column text-center">

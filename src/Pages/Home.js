@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useRef } from "react";
 import Banner from "../Components/Banner";
-import Cards from "../Components/Cards";
 import ContactMe from "../Components/ContactMe";
 import Loader from "../Components/Extra/Loader";
 import ScrollTop from "../Components/Extra/ScrollTop";
@@ -9,8 +8,8 @@ import Introduction from "../Components/Introduction";
 import PhotosVideos from "../Components/PhotosVideos";
 import PoliticalTour from "../Components/PoliticalTour";
 import Programs from "../Components/Programs";
-import SocialWorks from "../Components/SocialWorks";
 import Research from "../Components/Research";
+import Seminar from "../Components/Seminar";
 import serverURL from "../URL/serverURL";
 
 export default function Home() {
@@ -44,10 +43,11 @@ export default function Home() {
       </div>
       <Programs allData={allData} scrollToContact={scrollToContact} />
       <div className="container">
-      <PhotosVideos allData={allData} />
+        <PhotosVideos allData={allData} />
         <PoliticalTour allData={allData} />
-        <SocialWorks allData={allData} />
-        
+      </div>
+      <Seminar allData={allData} />
+      <div className="container">
         <ContactMe targetContctME={targetContctME} />
       </div>
 

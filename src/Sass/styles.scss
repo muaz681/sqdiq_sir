@@ -1017,6 +1017,42 @@
     }
   }
 }
+
+#seminar {
+  .section_content {
+    background: $bgColor;
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .title_area {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      display: block;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button.activeSeminar {
+      background: $pmColor;
+    }
+  }
+
+  .seminar_item {
+    // display: flex;
+    display: none;
+
+    img {
+      width: 100%;
+    }
+    p {
+    }
+  }
+  .seminar_item.activeSeminar {
+    display: flex;
+  }
+}
 /*==============================
         RESPONSIVE
  ==============================*/
