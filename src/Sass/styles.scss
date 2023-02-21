@@ -127,20 +127,20 @@
         margin-bottom: 2rem;
       }
       p {
-            text-align: left;
-            padding-right: 0;
-            padding-left: 0;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 34px;
-            color: #fff;
-            margin-bottom: 30px;
-        }
-    span {
-          color: #f48c06;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 34px;
+        color: #fff;
+        margin-bottom: 30px;
       }
-        a {
-          color: #f48c06;
+      span {
+        color: #f48c06;
+      }
+      a {
+        color: #f48c06;
       }
       button {
         padding: 0.8rem 3rem;
@@ -864,21 +864,159 @@
   place-content: center;
 }
 
-
 // ===========
-#photosVideos{
-  .research_container{
-    position: relative;
-
-  .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #00000057;
+.researchComponent {
+  .Research_title {
+    margin-bottom: 40px;
   }
+
+  .research_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .research_container {
+    position: relative;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      padding: 10px;
+      transition: all 0.3s linear;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      display: grid;
+      place-content: center;
+
+      &:hover {
+        background: hsla(34, 95%, 49%, 0.7);
+      }
+
+      h4 {
+        color: #fff;
+        overflow: hidden;
+        // padding: 10px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-align: center;
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #fff;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-align: left;
+      }
+    }
   }
 }
 
+// ===
+.reseachModal {
+  border-radius: 10px;
+  // position: ;
+
+  .modalFooter {
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+
+    button,
+    a {
+      cursor: pointer;
+      width: 100px;
+      padding: 10px;
+    }
+  }
+}
+
+#researchPage {
+  // background: #000;
+
+  .research_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .research_container {
+    position: relative;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      padding: 10px;
+      transition: all 0.3s linear;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      display: grid;
+      place-content: center;
+
+      &:hover {
+        background: hsla(34, 95%, 49%, 0.7);
+      }
+
+      h4 {
+        color: #fff;
+        overflow: hidden;
+        // padding: 10px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-align: center;
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #fff;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-align: left;
+      }
+    }
+  }
+}
 /*==============================
         RESPONSIVE
  ==============================*/

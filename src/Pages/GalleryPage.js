@@ -5,16 +5,11 @@ import { Link } from "react-router-dom";
 import ContactMe from "../Components/ContactMe";
 import ImageViewer from "../Components/Extra/ImageViewer";
 import Loader from "../Components/Extra/Loader";
+import ScrollTop from "../Components/Extra/ScrollTop";
 import serverURL from "../URL/serverURL";
 // Import Lazy Load
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-// Fixed Images
-import banner1 from "../Assets/images/Banner/Banner_1.jpg";
-import banner2 from "../Assets/images/Banner/Banner_2.jpg";
-import banner3 from "../Assets/images/Banner/Banner_3.jpg";
-import ScrollTop from "../Components/Extra/ScrollTop";
-const fixedImages = [banner1, banner2, banner3];
 
 export default function GalleryPage({ allData }) {
   const [btn, setBtn] = useState("photos");
@@ -46,7 +41,7 @@ export default function GalleryPage({ allData }) {
       olnyImageLink.push(`${serverURL + item?.photo}`);
     });
 
-    setAllImages([...fixedImages, ...olnyImageLink]);
+    setAllImages([...olnyImageLink]);
   }, [dbsImages]);
 
   function viewImg(photo, index, array) {

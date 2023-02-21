@@ -3,12 +3,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import serverURL from "../URL/serverURL";
 import ImageViewer from "./Extra/ImageViewer";
-// Fixed Images
-import banner1 from "../Assets/images/Banner/Banner_1.jpg";
-import banner2 from "../Assets/images/Banner/Banner_2.jpg";
-import banner3 from "../Assets/images/Banner/Banner_3.jpg";
-
-const fixedImages = [banner1, banner2, banner3];
 
 export default function PhotosVideos({ allData }) {
   const [btn, setBtn] = useState("photos");
@@ -36,7 +30,7 @@ export default function PhotosVideos({ allData }) {
       olnyImageLink.push(`${serverURL + item?.photo}`);
     });
 
-    setAllImages([...fixedImages, ...olnyImageLink]);
+    setAllImages([...olnyImageLink]);
   }, [dbsImages]);
 
   function viewImg(photo, index, array) {
