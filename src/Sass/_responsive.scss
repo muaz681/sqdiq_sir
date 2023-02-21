@@ -1,0 +1,436 @@
+/*==============================
+        LAPTOP SCREEN - 14 INCH
+ ==============================*/
+@media screen and (max-width: 1300px) {
+  #header.sticky {
+    padding: 0;
+  }
+  #banner .banner_heading .heading_wrapper {
+    max-width: 45%;
+    width: 40rem;
+    h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+      min-height: 8rem;
+    }
+
+    button {
+      padding: 0.6rem 3rem;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section_heading_container {
+    .section_title {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  #introduction {
+    padding: 5rem 3rem;
+    gap: 2rem;
+  }
+
+  #programs .container {
+    flex-direction: column;
+    text-align: center;
+
+    .section_text p {
+      text-align: center;
+    }
+  }
+  #political_tour {
+    .political_tour_info_container {
+      .political_tour_info {
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: flex-start !important;
+        gap: 0.8rem;
+
+        .info_area {
+          justify-content: flex-end !important;
+          gap: 2rem;
+          align-items: flex-start;
+          width: 100%;
+
+          &:hover {
+            &::after {
+              width: 0;
+              background: #fff;
+            }
+          }
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+
+        .season {
+          width: 100%;
+          text-align: right;
+          padding-right: 9rem;
+          color: $paraColor;
+        }
+
+        // Middle Point
+        .mid_icon {
+          display: none;
+        }
+      }
+    }
+    .reverse {
+      .season {
+        text-align: left !important;
+        margin-right: 0 !important;
+        padding-left: 9rem;
+      }
+    }
+
+    .middle_line {
+      display: none;
+    }
+  }
+
+  #strength {
+    .section_content {
+      padding: 5rem 0 0;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 5rem;
+
+      .img_area {
+        position: unset;
+        transform: none;
+        img {
+          width: 100%;
+        }
+      }
+
+      .strength_Info_container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .strength_Info {
+          gap: 2rem;
+          max-width: none;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  #social_works {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    .section_text {
+      max-width: 60rem;
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  #photosVideos .photo_grid {
+    padding: 0px 1rem;
+  }
+
+  #contactMe {
+    .section_content {
+      flex-direction: column;
+      gap: 7rem;
+      margin: 3rem 0;
+    }
+    form {
+      width: 100%;
+      max-width: 55rem;
+      margin: auto;
+    }
+    .contacts_area {
+      width: 100%;
+
+      .social_links {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/*==============================
+        TAB SCREEN
+ ==============================*/
+@media screen and (max-width: 800px) {
+  #banner {
+    height: 40vh;
+
+    &::after {
+      height: 100%;
+    }
+
+    .slider_container {
+      height: 100%;
+      img {
+        height: 40vh;
+      }
+    }
+
+    .container {
+      height: 100%;
+      .banner_heading {
+        h1 {
+          max-width: 30rem;
+          font-size: 2rem !important;
+          line-height: 3rem;
+          min-height: 8rem;
+          margin-bottom: 1rem;
+        }
+
+        button {
+          font-size: 1.4rem;
+          padding: 0.6rem 2rem;
+        }
+      }
+    }
+  }
+
+  #introduction {
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+      max-width: 33rem;
+      width: 100%;
+    }
+    b {
+      margin-bottom: 5px;
+    }
+    .introduction_text .article_wrapper .buttonContainer {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .introduction_text .author {
+      margin-top: 1.5rem !important;
+    }
+  }
+
+  #strength .section_content {
+    padding: 4rem 1rem 2rem;
+
+    .img_area {
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  #political_tour .political_tour_info_container {
+    margin: 5rem 0;
+    .political_tour_info {
+      .info_area {
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #cards {
+    gap: 1rem;
+  }
+
+  #social_works .video_area {
+    iframe {
+      width: 500px !important;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  #photosVideos .photo_grid {
+    padding: 0px 0rem;
+    grid-gap: 1rem;
+  }
+
+  #contactMe .contact_options {
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    justify-content: space-around;
+  }
+}
+
+/*==============================
+        PHONE SCREEN
+ ==============================*/
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 58.5%;
+  }
+
+  #header .container {
+    .logo_container img {
+      width: 16rem;
+    }
+
+    .boat_area img {
+      width: 4rem;
+    }
+  }
+  #header.sticky {
+    padding: 1rem 0;
+
+    .logo_container img {
+      width: 19rem;
+    }
+    .boat_area img {
+      width: 5rem;
+    }
+  }
+
+  #banner {
+    height: 30vh;
+
+    &::after {
+      height: 100%;
+    }
+
+    .slider_container {
+      height: 100%;
+      img {
+        height: 30vh;
+      }
+    }
+
+    .container {
+      height: 100%;
+      .banner_heading {
+        .heading_wrapper {
+          padding: 0.5rem;
+
+          h1 {
+            // max-width: 30rem;
+            font-size: 1.2rem !important;
+            line-height: 1.8rem;
+            min-height: 4rem;
+            margin-bottom: 1rem;
+          }
+
+          button {
+            font-size: 1.1rem;
+            padding: 0.4rem 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  #cards {
+    gap: 2rem !important;
+    .card {
+      width: 30rem;
+      height: 15rem;
+
+      img {
+        width: 6rem;
+        // margin-bottom: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #photosVideos .photo_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #photosVideos .video_grid {
+    grid-template-columns: 1fr;
+  }
+
+  #social_works .video_area {
+    iframe {
+      width: 350px !important;
+      aspect-ratio: 16/9;
+    }
+  }
+  #programs .container {
+    padding: 8rem 1rem;
+  }
+  #programs .program_list_container {
+    gap: 2rem;
+
+    .programInfo {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      gap: 1.5rem;
+
+      .date_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border-right: none !important;
+      }
+
+      .program_title {
+        border-top: 1px solid #333 !important;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        text-align: center;
+      }
+    }
+
+    .Today {
+      .program_title {
+        border-top: 1.5px solid #fff !important;
+      }
+    }
+  }
+
+  #contactMe .map_wrapper {
+    padding: 1rem;
+    margin: 3rem 0;
+  }
+  #contactMe form {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  #contactMe .contact_options .contact {
+    max-width: 23rem;
+  }
+
+  #cards {
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #social_works {
+    padding: 6rem 1rem;
+  }
+  #social_works .video_area {
+    iframe {
+      width: 100% !important;
+      aspect-ratio: 16/9;
+    }
+  }
+  #social_works .video_area {
+    iframe {
+      width: 300px !important;
+      aspect-ratio: 16/9;
+    }
+  }
+}

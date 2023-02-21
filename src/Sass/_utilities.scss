@@ -1,0 +1,99 @@
+/*==============================
+        FONTS
+ ==============================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap");
+
+$RobotoCondensed: "Roboto Condensed", sans-serif;
+$Roboto: "Roboto", sans-serif;
+
+// Bangla Font
+@font-face {
+  font-family: SiyamRupali;
+  src: url("../Assets/Fonts/Siyamrupali.ttf");
+}
+
+.bn {
+  font-family: SiyamRupali, Roboto;
+}
+
+/*==============================
+        COLORS
+ ==============================*/
+$pmColor: #f48c06;
+$bgColor: #fff1df;
+
+$headTxtColor: #333;
+$paraColor: #787e86;
+$programColor: #b4b4b4;
+
+/*==============================
+        ANIMATIONS
+ ==============================*/
+@keyframes scaleOne {
+  // Use in ContactMe .contacts.icon
+  // Use in photosVideos buttons
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOneThree {
+  // Use in PoliticalTour .mid_icon
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes leftAnim {
+  // Use in Programs .today
+  from {
+    left: -2%;
+  }
+  to {
+    left: 95%;
+  }
+}
+
+@keyframes leftAnimBtn {
+  // Use in Common styles .btn::after
+  0% {
+    left: -10%;
+  }
+  20% {
+    left: 105%;
+  }
+  100% {
+    left: 105%;
+  }
+}
+@keyframes scaleLow {
+  // Use in Common styles .btn
+  0% {
+    transform: scale(0.98);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// @keyframes threeSixty {
+//     // Use in contactMe .social_links
+//     0% {
+//         transform: rotate(0);
+//     }
+//     20% {
+//         transform: rotate(360deg);
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
