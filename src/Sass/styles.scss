@@ -864,6 +864,21 @@
   place-content: center;
 }
 
+
+// ===========
+#photosVideos{
+  .research_container{
+    position: relative;
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000057;
+  }
+  }
+}
+
 /*==============================
         RESPONSIVE
  ==============================*/

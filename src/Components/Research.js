@@ -62,19 +62,18 @@ export default function PhotosVideos({ allData }) {
       {/* =========== CONTENT =========== */}
       <div className="section_content" data-aos="fade-up">
           <div className="photo_grid">
-            {allImages?.slice(0, 3).map((image, index, array) => (
-              <div> 
+            {dbsImages?.slice(0, 3).map((item, index, array) => (
+              <div className="research_container" key={index}> 
                 <img
-                key={index}
-                src={image}
+                src={serverURL+item.photo}
                 alt="Photos"
                 // loading="lazy"
                 className={`photo${index} `}
-                onClick={() => viewImg(image, index, array)}
+                onClick={() => viewImg(serverURL+item.photo, index, array)}
                 data-aos={window.screen.width < 800 ? "fade-up" : "flip-left"}
               />
 
-            <div class="mask text-light d-flex flex-column text-center">
+            <div class="overlay mask text-light d-flex flex-column text-center">
               <div class="rscr_icon">
               <i class="zmdi zmdi-tune"></i>
               </div>
