@@ -12,7 +12,7 @@ export default function Introduction({ allData }) {
   useEffect(() => {
     setTimeout(() => {
       setArticle(refArticle?.current.children[0]?.children[0]?.innerHTML);
-    }, 0);
+    }, 100);
   });
 
   return (

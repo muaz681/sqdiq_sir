@@ -68,14 +68,14 @@ export default function ProgramPage() {
                   // data-aos={window.screen.width < 800 ? "fade-up" : "flip-left"}
                 />
 
-                <div class="overlay mask text-light d-flex flex-column text-center">
-                  <div class="rscr_icon">
-                    <i class="zmdi zmdi-tune"></i>
+                <div className="overlay mask text-light d-flex flex-column text-center">
+                  <div className="rscr_icon">
+                    <i className="zmdi zmdi-tune"></i>
                   </div>
-                  <h4 class="pt-4">{item.title}</h4>
-                  <p class="m-0">{item.description}</p>
-                  <div class="rscr_arr_icon">
-                    <i class="zmdi zmdi-arrow-right"></i>
+                  <h4 className="pt-4">{item.title}</h4>
+                  <p className="m-0">{item.description}</p>
+                  <div className="rscr_arr_icon">
+                    <i className="zmdi zmdi-arrow-right"></i>
                   </div>
                 </div>
               </div>
