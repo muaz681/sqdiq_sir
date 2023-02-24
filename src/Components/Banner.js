@@ -80,10 +80,6 @@ export default function Banner({ scrollToContact }) {
               <a href="https://bu.edu.bd/" target="_blank">Bangladesh University</a>
 
               </p>
-
-              {/* <button className="btn" onClick={scrollToContact}>
-                যোগাযোগ করুন
-              </button> */}
             </div>
           ))}
         </div>

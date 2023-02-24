@@ -939,21 +939,26 @@
   // position: ;
 
   .modalFooter {
-    // position: absolute;
     bottom: 0;
     left: 0;
+    position: sticky;
+    background: #f1f1f1;
+    padding: 15px;
 
     button,
     a {
       cursor: pointer;
       width: 100px;
-      padding: 10px;
+      padding: 4px 10px;
+      font-size: 15px;
+      margin-right: 10px;
     }
   }
 }
 
 #researchPage {
   // background: #000;
+  margin-top: 50px;
 
   .research_grid {
     display: grid;
@@ -1019,11 +1024,12 @@
 }
 
 #seminar {
+  margin: 5rem 0 !important;
   .section_content {
     background: $bgColor;
     display: grid;
     // grid-template-columns: 30% 70%;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 3fr 9fr;
     gap: 40px;
     overflow: hidden;
     padding: 25px;
@@ -1039,11 +1045,14 @@
       padding: 10px;
       cursor: pointer;
       border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    svg{
+      margin: 0 10px;
     }
     button.activeSeminar {
       background: $pmColor;
       color: #fff;
-      border-radius: 5px;
     }
   }
 

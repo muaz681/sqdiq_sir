@@ -47,7 +47,7 @@ export default function ProgramPage() {
 
         {/* **** SECTION HEADING **** */}
         <div className="section_heading_container" style={{ marginBottom: 30 }}>
-          <h2 className="section_title">আমার আসন্ন প্রোগ্রামসমুহ</h2>
+          <h2 className="section_title">All Researchs</h2>
         </div>
 
         {/* =========== CONTENT =========== */}

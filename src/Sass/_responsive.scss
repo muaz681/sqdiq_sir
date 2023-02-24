@@ -276,7 +276,7 @@
 
   #header .container {
     .logo_container img {
-      width: 16rem;
+      width: 7rem;
     }
 
     .boat_area img {
@@ -287,7 +287,7 @@
     padding: 1rem 0;
 
     .logo_container img {
-      width: 19rem;
+      width: 7rem;
     }
     .boat_area img {
       width: 5rem;
@@ -313,13 +313,24 @@
       .banner_heading {
         .heading_wrapper {
           padding: 0.5rem;
+          // display: none;
 
           h1 {
             // max-width: 30rem;
             font-size: 1.2rem !important;
             line-height: 1.8rem;
-            min-height: 4rem;
+            min-height: 2rem;
             margin-bottom: 1rem;
+          }
+          p{
+            font-size: 10px;
+            line-height: 16px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
           }
 
           button {
@@ -352,6 +363,14 @@
     grid-template-rows: auto;
   }
   #photosVideos .research_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #seminar .section_content{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #seminar .seminar_item.activeSeminar {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }

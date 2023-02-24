@@ -47,7 +47,7 @@ export default function PoliticalTour({ allData }) {
         <h2 className="section_title">
           {allData?.rajniti_heading
             ? allData?.rajniti_heading
-            : "My Achivements"}
+            : "Achivements"}
         </h2>
         <p className="section_description">{allData?.rajniti_description}</p>
       </div>

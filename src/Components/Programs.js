@@ -90,7 +90,7 @@ export default function Programs({ allData }) {
           <h2>
             {allData?.program_title
               ? allData?.program_title
-              : "আমার আসন্ন প্রোগ্রামসমুহ"}
+              : "Upcoming Events"}
           </h2>
           <p>{allData?.program_description}</p>
 
@@ -98,7 +98,7 @@ export default function Programs({ allData }) {
             <button className="btn_outline">
               {allData?.program_btn_text
                 ? allData?.program_btn_text
-                : "সকল প্রোগ্রাম দেখুন"}
+                : "All Schedule"}
             </button>
           </Link>
         </div>

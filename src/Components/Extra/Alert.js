@@ -3,13 +3,13 @@ import Swal from "sweetalert2";
 export const successAlert = () => {
   Swal.fire({
     icon: "success",
-    title: "ধন্যবাদ!",
-    text: "আাপনার মেসেজটি সফলভাবে পৌঁছে গেছে!",
+    title: "Thank You!",
+    text: "Your Message Successfully Send!",
     // text: "Your message is sent successfully!",
     padding: "20px",
     timer: 8000,
     timerProgressBar: true,
-    confirmButtonText: "ঠিক আছে",
+    confirmButtonText: "Ok",
     confirmButtonColor: "#f48c06",
   });
 };
@@ -17,13 +17,13 @@ export const successAlert = () => {
 export const errorAlert = () => {
   Swal.fire({
     icon: "error",
-    title: "দুঃখিত!",
-    text: "দয়া করে সঠিক তথ্য প্রদান করুন!",
+    title: "Sorry",
+    text: "Please enter your valuable Message!",
     // text: "Something is wrong, Please check your form data!",
     padding: "20px",
     timer: 5000,
     timerProgressBar: true,
-    confirmButtonText: "ঠিক আছে",
+    confirmButtonText: "Ok",
     confirmButtonColor: "#f48c06",
   });
 };

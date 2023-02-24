@@ -58,9 +58,9 @@ export default function Introduction({ allData }) {
             {allData?.about_name ? allData.about_name : "Professor Sadiq Iqbal"}
           </b>
           <div className="title_wrapper">
-            <span>{allData?.about_title_two}</span>
-            <span>{allData?.about_title_three}</span>
-            <span>{allData?.about_title_four}</span>
+            <span>Chairman, Department of Computer Science & Engineering</span>
+            {/* <span>Faculty of Science, Engineering Technology</span> */}
+            <span>Bangladesh University</span>
           </div>
         </div>
       </div>
@@ -82,9 +82,9 @@ export default function Introduction({ allData }) {
                 : "Professor Sadiq Iqbal"}
             </b>
             <div className="title_wrapper">
-              <span>{allData?.about_title_two}</span>
-              <span>{allData?.about_title_three}</span>
-              <span>{allData?.about_title_four}</span>
+            <span>Chairman, Department of Computer Science & Engineering</span>
+            {/* <span>Faculty of Science, Engineering Technology</span> */}
+            <span>Bangladesh University</span>
             </div>
           </div>
         </div>

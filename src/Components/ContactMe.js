@@ -90,7 +90,7 @@ export default function ContactMe({ targetContctME }) {
         <h2 className="section_title">
           {appSettings?.contact_title
             ? appSettings?.contact_title
-            : "যোগাযোগ করুন"}
+            : "Contact Me"}
         </h2>
         <p className="section_description">
           {appSettings?.contact_description}
@@ -106,30 +106,30 @@ export default function ContactMe({ targetContctME }) {
           className={error ? "error" : "validForm"}
           // data-aos="fade-right"
         >
-          <h6>যোগাযোগ</h6>
+          <h6>Contact</h6>
 
           <input
             type="text"
-            placeholder="নাম"
+            placeholder="Name"
             name="name"
             value={mail.name}
             onChange={handleChange}
           />
           <input
             type="email"
-            placeholder="ইমেল"
+            placeholder="Email"
             name="email"
             value={mail.email}
             onChange={handleChange}
           />
           <textarea
-            placeholder="মেসেজ লিখুন"
+            placeholder="Write Message"
             name="message"
             value={mail.message}
             onChange={handleChange}
           ></textarea>
           <button type="submit" disabled={hold} className="btn">
-            পাঠিয়ে দিন
+            Send
           </button>
         </form>
 
@@ -176,7 +176,7 @@ export default function ContactMe({ targetContctME }) {
             // data-aos-offset="200"
           >
             {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
-            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=natore&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bangladesh University&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
           </div>
 
           {/* Social Media Links */}

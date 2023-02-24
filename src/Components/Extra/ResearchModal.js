@@ -33,11 +33,12 @@ export default function Modal({ title, data, children, show, setClose }) {
                 href={"http://muaz.buildit.com.bd/pdfview/" + data?.id}
                 target="_blank"
                 rel="noreferrer"
+                className="btn"
               >
-                Export PDF
+                Research Download
               </a>
-              <a href={data?.url} target="_blank" rel="noreferrer">
-                Link
+              <a href={data?.url} target="_blank" rel="noreferrer" className="btn_outline">
+                Research Link
               </a>
             </div>
           </div>

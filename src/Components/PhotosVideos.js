@@ -54,7 +54,7 @@ export default function PhotosVideos({ allData }) {
       {/* **** SECTION HEADING **** */}
       <div className="section_heading_container">
         <h2 className="section_title">
-          {allData?.gallery_heading ? allData.gallery_heading : "ছবি এবং ভিডিও"}
+          {allData?.gallery_heading ? allData.gallery_heading : "Gallery"}
         </h2>
         <p className="section_description">{allData?.gallery_description}</p>
       </div>
@@ -68,10 +68,10 @@ export default function PhotosVideos({ allData }) {
         >
           <span></span>
           <button className="photosBtn" onClick={() => setBtn("photos")}>
-            ছবি
+            Photos
           </button>
           <button className="videosBtn" onClick={() => setBtn("videos")}>
-            ভিডিও
+            Videos
           </button>
         </div>
       </div>
