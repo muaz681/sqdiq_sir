@@ -98,7 +98,7 @@ export default function ProgramPage() {
           <Link to="/">
             <button className="btn_arrow">
               <BiArrowBack />
-              হোমপেজে ফিরে যান
+              Home
             </button>
           </Link>
         </div>

@@ -91,8 +91,8 @@ export default function PhotosVideos({ allData }) {
 
       {/* ********** OTHERS BUTTONS  ********** */}
       <div className="more_btn">
-        <Link to={`/gallery`}>
-          <button className="btn">আরো দেখুন</button>
+        <Link to={`/research`}>
+          <button className="btn">See More</button>
         </Link>
       </div>
 

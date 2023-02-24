@@ -1022,20 +1022,28 @@
   .section_content {
     background: $bgColor;
     display: grid;
-    grid-template-columns: 30% 70%;
+    // grid-template-columns: 30% 70%;
+    grid-template-columns: 2fr 10fr;
+    gap: 40px;
+    overflow: hidden;
+    padding: 25px;
   }
   .title_area {
     gap: 10px;
     display: flex;
     flex-direction: column;
+    // justify-content: center;
 
     button {
       display: block;
       padding: 10px;
       cursor: pointer;
+      border-radius: 5px;
     }
     button.activeSeminar {
       background: $pmColor;
+      color: #fff;
+      border-radius: 5px;
     }
   }
 
@@ -1045,12 +1053,15 @@
 
     img {
       width: 100%;
+      height: 360px;
     }
     p {
     }
   }
   .seminar_item.activeSeminar {
-    display: flex;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 40px;
   }
 }
 /*==============================

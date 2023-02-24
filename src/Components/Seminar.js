@@ -39,6 +39,7 @@ export default function SocialWorks({ allData }) {
                   key={item.id}
                   onClick={() => setActiveId(item?.id)}
                 >
+                  
                   {item?.title}
                 </button>
               ))}

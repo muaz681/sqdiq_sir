@@ -67,7 +67,7 @@ export default function GalleryPage({ allData }) {
           <Link to="/">
             <button className="btn_arrow">
               <BiArrowBack />
-              হোমপেজে ফিরে যান
+              Home
             </button>
           </Link>
         </div>
