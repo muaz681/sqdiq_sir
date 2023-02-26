@@ -240,6 +240,17 @@
       }
     }
   }
+
+  // Code for Tablet (iksagor0)
+  #seminar {
+    .section_content {
+      grid-template-columns: 1fr;
+    }
+    .title_area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -322,7 +333,7 @@
             min-height: 2rem;
             margin-bottom: 1rem;
           }
-          p{
+          p {
             font-size: 10px;
             line-height: 16px;
             margin-bottom: 10px;
@@ -366,7 +377,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  #seminar .section_content{
+  #seminar .section_content {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
@@ -375,7 +386,7 @@
     grid-template-rows: auto;
   }
 
-  #researchPage .research_grid{
+  #researchPage .research_grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
@@ -442,6 +453,14 @@
     gap: 1rem;
     align-items: center;
     padding: 3rem 0;
+  }
+
+  // Code for Mobile (iksagor0)
+  #seminar {
+    .title_area {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 }
 

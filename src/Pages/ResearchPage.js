@@ -19,11 +19,13 @@ export default function ProgramPage() {
   async function fetchData(path, setData) {
     const res = await axios.get(serverURL + path);
     setData(res.data.data);
+    setLoader(false);
   }
 
   React.useEffect(() => {
     fetchData("api/research", setResearchData);
-    setLoader(false);
+
+    window.scroll(0, 0);
   }, []);
 
   const handleCard = (cardData) => {
@@ -64,8 +66,6 @@ export default function ProgramPage() {
                   alt="Photos"
                   // loading="lazy"
                   className={`photo${index} `}
-                  // onClick={() => viewImg(serverURL + item.photo, index, array)}
-                  // data-aos={window.screen.width < 800 ? "fade-up" : "flip-left"}
                 />
 
                 <div className="overlay mask text-light d-flex flex-column text-center">
