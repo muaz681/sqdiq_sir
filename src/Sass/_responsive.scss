@@ -317,6 +317,7 @@
     }
   }
 
+
   #banner {
     height: 30vh;
 
@@ -380,6 +381,36 @@
       }
     }
   }
+
+  #modal  {
+    .modalHeader .modalTitle{
+      font-size: 18px;
+    }
+    .modalFooter a {
+      font-size: 10px;
+  }
+  p {
+    font-size: 14px;
+  }
+    
+}
+.researchComponent {
+  .research_container {
+    position: relative;
+    cursor: pointer;
+    height: 220px;
+  }
+  .overlay h4{
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  .overlay p{
+    font-size: 12px !important;
+  }
+}
+#introduction img {
+  height: 22rem;
+}
 
   #photosVideos .photo_grid {
     grid-template-columns: 1fr;
