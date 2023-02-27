@@ -33,7 +33,7 @@ export default function PhotosVideos({ allData }) {
       </div>
 
       {/* =========== CONTENT =========== */}
-      <div className="section_content" data-aos="fade-up">
+      <div className="section_content">
         <div className="research_grid">
           {dbsImages?.slice(0, 3).map((item, index, array) => (
             <div
