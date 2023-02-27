@@ -394,10 +394,20 @@
   }
     
 }
+#researchPage {
+  .research_container {
+    height: 220px;
+  }
+  .overlay h4{
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+  .overlay p{
+    font-size: 12px !important;
+  }
+}
 .researchComponent {
   .research_container {
-    position: relative;
-    cursor: pointer;
     height: 220px;
   }
   .overlay h4{
