@@ -33,7 +33,7 @@ export default function PhotosVideos({ allData }) {
       </div>
 
       {/* =========== CONTENT =========== */}
-      <div className="section_content">
+      <div className="section_content" data-aos="fade-up">
         <div className="research_grid">
           {dbsImages?.slice(0, 3).map((item, index, array) => (
             <div
@@ -46,6 +46,7 @@ export default function PhotosVideos({ allData }) {
                 alt="Photos"
                 // loading="lazy"
                 className={`photo${index} `}
+                data-aos={window.screen.width < 800 ? "fade-up" : "flip-left"}
               />
 
               <div className="overlay mask text-light d-flex flex-column text-center">
