@@ -30,7 +30,7 @@ export default function Modal({ title, data, children, show, setClose }) {
 
             <div className="modalFooter">
               <a
-                href={"http://muaz.buildit.com.bd/pdfview/" + data?.id}
+                href={"https://muaz.buildit.com.bd/pdfview/" + data?.id}
                 target="_blank"
                 rel="noreferrer"
                 className="btn"
