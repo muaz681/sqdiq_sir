@@ -77,7 +77,7 @@ export default function GalleryPage({ allData }) {
           <h2 className="section_title">
             {allData?.gallery_heading
               ? allData.gallery_heading
-              : "ছবি এবং ভিডিও"}
+              : "Photos & Videos"}
           </h2>
           <p className="section_description">{allData?.gallery_description}</p>
         </div>
@@ -91,10 +91,10 @@ export default function GalleryPage({ allData }) {
           >
             <span></span>
             <button className="photosBtn" onClick={() => setBtn("photos")}>
-              ছবি
+              Photos
             </button>
             <button className="videosBtn" onClick={() => setBtn("videos")}>
-              ভিডিও
+              Videos
             </button>
           </div>
         </div>

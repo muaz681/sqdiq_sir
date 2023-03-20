@@ -46,7 +46,6 @@ export default function PhotosVideos({ allData }) {
                 alt="Photos"
                 // loading="lazy"
                 className={`photo${index} `}
-                data-aos={window.screen.width < 800 ? "fade-up" : "flip-left"}
               />
 
               <div className="overlay mask text-light d-flex flex-column text-center">
